@@ -1,0 +1,35 @@
+ *{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	/*background-color: rgb(200,200,200);*/
+	background: url(../img/portfolio/nz/IMG_0262.jpg) no-repeat center center fixed;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	text-align: center;
+	font-size: 3em;
+	color: black;
+	grid-column-end: span 2;
+	font-family: 'Quicksand', sans-serif;
+	padding: 50px 200px;
+}
+article{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-end: span 2;
+}
+.container{
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	/*background-color: grey;*/
+}
+iframe{
+	grid-column-end: span 2;
+}

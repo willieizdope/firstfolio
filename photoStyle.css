@@ -1,0 +1,62 @@
+/*tons of this code was found on example pages or w3schools*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	/*background-color: rgb(200,200,200);*/
+	background: url(../img/portfolio/nz/ROTORUA/IMG_0216.jpg) no-repeat center center fixed;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	text-align: center;
+	font-size: 3em;
+	color: white;
+	grid-column-end: span 2;
+	font-family: 'Quicksand', sans-serif;
+	padding: 50px 200px;
+}
+nav{
+	/*color: rgb(230,230,230);*/
+	display: flex;
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+}
+article{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-end: span 2;
+}
+.container{
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	/*background-color: grey;*/
+}
+#box{
+	background-color: rgba(50, 50, 50, .4);
+}
+img{
+	/*border: 1px solid #ddd;*/
+	border-radius: 25px;
+	padding: 5px;
+	width: 100%;
+}
+img:hover{
+	box-shadow: 0 0 4px 2px rgba(255,255,255, .5); 
+}
+.picturebox{
+	grid-column-end: span 1;
+	/*background-color: blue;*/
+}
+
+/*.column img{
+	margin: 8px 50px;
+	width: 100%;
+}*/

@@ -1,0 +1,93 @@
+:root{
+	--primary-color: rgba(50, 50, 50, .6);
+	--overlay-color: rgba(24, 24, 24, .85);
+	--menu-speed: .75s;
+}
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+	line-height: 1.5;
+}
+p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.container{
+	max-width: 960px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 3rem;
+}
+.showcase{
+	background-color: var(--primary-color);
+	color: white;
+	height: 100vh; /*100 viewport height, takes up full screen*/
+	position: relative;
+}
+.showcase:before {
+	content: '';
+	background: url(../img/portfolio/nz/me.jpg) no-repeat center center fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.showcase-inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+}
+.showcase h1{
+	font-size: 4rem;
+}
+.showcase p{
+	font-size: 1.1rem;
+}
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	border:none;
+	background-color: var(--primary-color);
+	color: white;
+	padding: .75rem 1.5rem;
+	margin-top: 1.5rem;
+	transition: opacity .5s ease-in;
+	/*display: none;*/
+}
+.btn:hover{
+	opacity: .7;
+}
+.arrow{
+	position:absolute;
+	top: 425px;
+	left: 0px;
+
+	animation-name: arrow;
+	animation-duration: 2s;
+	animation-delay: .6s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+#email{
+	margin-top: 0px;
+}
+@keyframes arrow{
+	from{
+		transform: translateY(-50px) translateX(0px);
+		opacity: 0;
+
+	}
+	to{
+		transform: translateY(45px) translateX(825px);
+		opacity: 1;
+	}
+}
